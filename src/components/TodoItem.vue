@@ -5,7 +5,7 @@
 			<i class="todo_pin_icon"></i>
 		</label>
 		<label for="todo_checkbox" class="todo_app_checkbox" >
-			<input class="todo_checkbox_item" type="checkbox" id="todo_checkbox" />
+			<input class="todo_checkbox_item" type="checkbox" id="todo_checkbox" v-model="completed" />
 		</label>
 		<div class="todo_item_name">{{ task.name }}</div>
 		<my-button 

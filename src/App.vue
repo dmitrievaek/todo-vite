@@ -6,9 +6,11 @@
 		<todo-list 
 			:tasks="tasks"
 			@remove="removeTodo"
+			:activeTab="activeTab"
 		/>
 		<todo-footer
 			:tasks="tasks"
+			:activeTab="activeTab"
 		/>
 	</div>
 </template>
@@ -25,10 +27,11 @@ export default {
 	data(){
 		return {
 			tasks:[
-				{id:1, name: 'Todo1'},
-				{id:2, name: 'Todo2'},
-				{id:3, name: 'Todo3'},
+				{id:1, name: 'Todo1', completed: false},
+				{id:2, name: 'Todo2', completed: false},
+				{id:3, name: 'Todo3', completed: false},
 			],
+			activeTab: 1
 		}
 	},
 	methods:{

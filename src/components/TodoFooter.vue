@@ -3,13 +3,13 @@
 		<div>{{tasks.length}} items</div>
 		<ul class="todo_filters">
 			<li class="todo_filters_item">
-				<a href="#!" class="selected">All</a>
+				<a href="#" @click="activeTab = 1" :class="{ selected: activeTab === 1 }">All</a>
 			</li>
 			<li class="todo_filters_item">
-				<a href="#!">Active</a>
+				<a href="#" @click="activeTab = 2" :class="{ selected: activeTab === 2 }">Active</a>
 			</li>
 			<li class="todo_filters_item">
-				<a href="#!">Completed</a>
+				<a href="#" @click="activeTab = 3" :class="{ selected: activeTab === 3 }">Completed</a>
 			</li>
 		</ul>
 		<my-button
@@ -28,7 +28,8 @@ export default {
 		tasks:{
 			type: Array,
 			required: true,
-		}
+		},
+		activeTab: Number
 	},
 	methods:{
 		clearCompleted(){

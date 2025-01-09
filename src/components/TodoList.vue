@@ -1,14 +1,33 @@
 <template>
-	<div v-if="tasks.length > 0">
-		<todo-item 
-			v-for="task in tasks"
-			:task="task"
-			:key="task.id"
-			@remove="$emit('remove', task)"
-		/>	
+	<div v-show="activeTab === 1">
+		<div>
+			<todo-item 
+				v-for="task in tasks"
+				:task="task"
+				:key="task.id"
+				@remove="$emit('remove', task)"
+			/>	
+		</div>
 	</div>
-	<div class="todo_list" v-else>
-		Список пуст!
+	<div v-show="activeTab === 2">
+		<div>
+			<todo-item 
+				v-for="task in tasks"
+				:task="task"
+				:key="task.id"
+				@remove="$emit('remove', task)"
+			/>	
+		</div>
+	</div>
+	<div v-show="activeTab === 3">
+		<div>
+			<todo-item 
+				v-for="task in tasks"
+				:task="task"
+				:key="task.id"
+				@remove="$emit('remove', task)"
+			/>	
+		</div>
 	</div>
 	<br/>
 </template>
@@ -21,7 +40,8 @@ export default {
 		tasks:{
 			type: Array,
 			required: true,
-		}
+		},
+		activeTab: Number
 	}
 }
 </script>
