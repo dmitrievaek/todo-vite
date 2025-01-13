@@ -30,25 +30,22 @@ export default {
 </script>
 
 <style scoped>
-.task {;
+.task {
 	display:flex;
 	align-items:center;
 	padding: 0.3rem 2rem 0.5rem 2rem;
 }
-.todo_app_pin{
-
-}
 .todo_pin_item{
 	position: absolute;
-    width: 15px;
-    height: 15px;
-    opacity:0;
-    cursor: pointer;
+	width: 15px;
+	height: 15px;
+	opacity:0;
+	cursor: pointer;
 }
 .todo_pin_icon{
 	opacity:0;
 	width: 10px;
-    height: 10px;
+	height: 10px;
 	display:inline-block;
 	position:relative;
 	margin-right:15px;
@@ -58,17 +55,17 @@ export default {
 	opacity:1;
 }
 .todo_pin_icon:after {
-    content: "\25B2";
+	content: "\25B2";
 	color:red;
 	display: inline-block;
-    font-size: 20px;
+	font-size: 20px;
 }
 .todo_item_name{
 	margin-right: 1rem;
-    display: block;
-    width: 100%;
-    word-break: break-all;
-    font-size: 1rem;
+	display: block;
+	width: 100%;
+	word-break: break-all;
+	font-size: 1rem;
 }
 .todo_app_checkbox{
 	margin-right: 1rem;
@@ -76,25 +73,25 @@ export default {
 }
 .todo_checkbox_item{
 	width: 15px;
-    height: 15px;
+	height: 15px;
 	cursor:pointer;
 }
 .del_btn{
 	position: relative;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: none;
-    cursor: pointer;
-    background: transparent;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: none;
+	cursor: pointer;
+	background: transparent;
 }
 .del_btn:before, .del_btn:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1rem;
-    height: 2px;
-    background-color: red;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1rem;
+	height: 2px;
+	background-color: red;
 }
 .del_btn:after{
 	transform: translate(-50%, -50%) rotate(-45deg);

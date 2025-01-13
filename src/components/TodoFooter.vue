@@ -42,21 +42,21 @@ export default {
 <style scoped>
 .todo_footer{
 	display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    border-bottom-left-radius: .25rem;
-    border-bottom-right-radius: .25rem;
-    background-color: #c7ecee;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem 2rem;
+	border-bottom-left-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+	background-color: #c7ecee;
 }
 .todo_clear{
 	padding: .625rem 1.5rem;
-    background: #7ed6df;
-    color: #fff;
-    border: none;
-    border-radius: .25rem;
-    cursor: pointer;
+	background: #7ed6df;
+	color: #fff;
+	border: none;
+	border-radius: .25rem;
+	cursor: pointer;
 	font-size:13px;
 }
 .todo_clear:hover{
@@ -64,7 +64,7 @@ export default {
 }
 .todo_filters{
 	display: flex;
-    align-items: center;
+	align-items: center;
 	list-style: none;
 }
 .todo_filters_item{
@@ -72,9 +72,9 @@ export default {
 }
 .todo_filters_item a{
 	position: relative;
-    padding: .5rem 0;
-    text-decoration: none;
-    color: #000;
+	padding: .5rem 0;
+	text-decoration: none;
+	color: #000;
 }
 .todo_filters_item .selected{
 	text-decoration:underline;

@@ -42,11 +42,11 @@ form{
 }
 .todo_btn{
 	padding: 0.7rem 1.5rem;
-    background: red;
-    color: #fff;
-    border: none;
-    border-radius: .25rem;
-    cursor: pointer;
-    transition: background .2s ease-out;
+	background: red;
+	color: #fff;
+	border: none;
+	border-radius: .25rem;
+	cursor: pointer;
+	transition: background .2s ease-out;
 }
 </style>
